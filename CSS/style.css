@@ -461,8 +461,7 @@ iframe {
 
 .palmares_banner h2 {
     color: #152649;
-    font-size: 4vw;
-
+    font-size: calc(2.2em + 3vw);
 }
 
 .insignia {
@@ -492,7 +491,7 @@ iframe {
 }
 
 .cantidad_premios h4 {
-    font-size: calc(1.75rem + 1.5vw);
+    font-size: calc(1.75rem + 1.7vw);
 }
 
 .nombre_premio {
@@ -544,7 +543,12 @@ iframe {
     .contenedor_premios {
         flex-direction: column;
     }
-
+    .fechas_premios p{
+        display: none;
+    }
+    .img_premio{
+        width: 70%;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -742,7 +746,7 @@ nav ul ul ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 80%;
     margin: auto;
 }
 
