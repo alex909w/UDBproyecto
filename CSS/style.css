@@ -89,33 +89,38 @@ footer {
     background-color: #ffffff;
     color: rgb(0, 0, 0);
 }
+
 .logo_footer {
     display: flex;
     padding: 2rem;
     justify-content: space-between;
 }
-.logo_footer img{
+
+.logo_footer img {
     height: 2.5em;
     width: auto;
     margin-left: 10px;
     transition: 0.5s;
 }
 
-.social_media{
+.social_media {
     display: flex;
     justify-content: center;
 }
 
-.social_media svg{
-margin-right: 10px;
-transition: 0.5s;
+.social_media svg {
+    margin-right: 10px;
+    transition: 0.5s;
 }
-.social_media svg:hover{
+
+.social_media svg:hover {
     scale: 1.2;
 }
-.logo_footer img:hover{
+
+.logo_footer img:hover {
     scale: 1.2;
 }
+
 /* FIN DE footer */
 
 /* INICIA INDEX */
@@ -191,7 +196,8 @@ label {
     margin-bottom: 10px;
 }
 
-button.enviar, a.btn {
+button.enviar,
+a.btn {
     background-color: #152649;
     color: #fff;
     border: none;
@@ -202,7 +208,8 @@ button.enviar, a.btn {
     float: inline-start;
 }
 
-button.enviar:hover, a.btn:hover {
+button.enviar:hover,
+a.btn:hover {
     background-color: #061331;
     color: #fff;
 }
@@ -325,7 +332,7 @@ iframe {
     padding: 1em;
 }
 
-.creador > img {
+.creador>img {
     border-radius: 0.75rem;
     width: 25%;
 }
@@ -401,97 +408,111 @@ iframe {
     background: var(--bg, lightgray);
     color: var(--fg, #333);
 }
+
 /* Inicia palmarés */
 /* Inicia palmarés */
-.palmares{
+.palmares {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #faf5f5;
     padding: 5rem;
+    background: rgb(213, 218, 228);
+    background: linear-gradient(90deg, rgba(213, 218, 228, 1) 5%, rgba(228, 232, 238, 1) 20%, rgba(255, 255, 255, 1) 50%, rgba(230, 234, 239, 1) 80%, rgba(213, 218, 228, 1) 95%);
 }
 
-.contenedor_premios{
+.contenedor_premios {
     display: flex;
-    margin: 1rem;
     width: 90%;
-
-
+    margin-top: 2em;
 }
-.img_premio{
+
+.img_premio {
     display: flex;
     justify-content: space-evenly;
     width: 20%;
     border-radius: 5px;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     border: solid #b8860b 2px;
-    background-color: white;
-    }
+    background: rgb(235, 235, 235);
+    background: radial-gradient(circle, rgba(235, 235, 235, 1) 0%, rgba(223, 223, 223, 1) 23%, rgba(220, 220, 220, 1) 47%, rgba(156, 156, 156, 1) 100%);
+}
 
-.img_premio img{
-    filter: brightness(0.5);
+.img_premio img {
+    filter: brightness(0.5) drop-shadow(rgb(51, 51, 51) -2px 8px 3px);
     width: 100%;
+    height: auto;
     padding: 5px;
 }
 
-.palmares_banner{
+.palmares_banner {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 40vh;
-        img{
-            width: 3vh;
-        }
+    background: rgb(213, 218, 228);
+    background: linear-gradient(90deg, rgba(213, 218, 228, 1) 5%, rgba(228, 232, 238, 1) 20%, rgba(255, 255, 255, 1) 50%, rgba(230, 234, 239, 1) 80%, rgba(213, 218, 228, 1) 95%);
+
+    img {
+        width: 3vw;
+    }
 }
 
-.palmares_banner h2{
+.palmares_banner h2 {
     color: #152649;
-    font-size: 7vh;  
+    font-size: 4vw;
 
 }
 
-.insignia{
-    width: 3vh;
+.insignia {
+    width: calc(1rem + 0.5vw);
     filter: brightness(0.3);
 }
 
-.gloria{
+.gloria {
     display: flex;
     align-items: center;
 }
-.banner_premio img{
+
+.banner_premio img {
     width: 6vw;
     padding-bottom: 2px;
     filter: drop-shadow(#333 -2px 8px 3px);
 }
 
-.descripcion_premios{
+.descripcion_premios {
     width: 80%;
     padding-left: 1rem;
 }
-.cantidad_premios{
+
+.cantidad_premios {
     color: darkgoldenrod;
-    text-shadow: rgb(114, 111, 105) 3px 1px 2px ;
+    text-shadow: rgb(114, 111, 105) 3px 1px 2px;
 }
-.cantidad_premios h4{
-    font-size: 6vh;
+
+.cantidad_premios h4 {
+    font-size: calc(1.75rem + 1.5vw);
 }
-.nombre_premio{
+
+.nombre_premio {
     color: #152649;
-    text-shadow: rgb(255, 255, 255) 6px 3px 6px ;
-    h3{
+    text-shadow: rgb(255, 255, 255) 6px 3px 6px;
+
+    h3 {
         font-weight: bold;
-        font-size: 4vh;
+        font-size: calc(1rem + 0.5vw);
     }
 }
-.fechas_premios{
-    /* display: none; */
-    font-size: 2vh;
+
+.fechas_premios {
+    font-size: 1vw;
 }
-.palmares_banner{
+
+.palmares_banner {
     display: flex;
 }
+
 /* Finaliza palmarés */
 
 
@@ -502,7 +523,7 @@ iframe {
         grid-template-rows: 1fr 1fr;
         justify-content: center;
         margin: auto;
-/* se modifico para centrar imagen del celular*/
+        /* se modifico para centrar imagen del celular*/
     }
 
     .Creadores {
@@ -519,15 +540,22 @@ iframe {
     .Creadores {
         flex-direction: column;
     }
-    .contenedor_premios{
+
+    .contenedor_premios {
         flex-direction: column;
     }
+
 }
 
 @media screen and (max-width: 576px) {
 
     .main_wrapper {
         min-width: 390px;
+    }
+
+    .carrusel {
+        justify-content: flex-start;
+        align-items: start;
     }
 
     .Creadores {
@@ -539,51 +567,51 @@ iframe {
 
 body {
     font-family: Arial, sans-serif;
-  }
-  
-  nav ul {
+}
+
+nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-  }
-  
-  nav ul li {
+}
+
+nav ul li {
     display: inline-block;
     position: relative;
-  }
-  
-  nav ul li a {
+}
+
+nav ul li a {
     display: block;
     padding: 10px 20px;
     text-decoration: none;
     color: #333;
-  }
-  
-  nav ul li:hover > .submenu {
+}
+
+nav ul li:hover>.submenu {
     display: block;
-  }
-  
-  nav ul ul {
+}
+
+nav ul ul {
     display: none;
     position: absolute;
     top: 100%;
     left: 0;
     background-color: #fff;
     border: 1px solid #ccc;
-  }
-  
-  nav ul ul li {
+}
+
+nav ul ul li {
     display: block;
-  }
-  
-  nav ul ul li a {
+}
+
+nav ul ul li a {
     padding: 10px 20px;
-  }
-  
-  nav ul ul ul {
+}
+
+nav ul ul ul {
     left: 100%;
     top: 0;
-  }
+}
 
 
 
@@ -591,6 +619,7 @@ body {
 .nav-link .arrow {
     margin-left: 5px;
 }
+
 /* Estilo del submenú */
 .submenu2 {
     display: none;
@@ -600,16 +629,19 @@ body {
     position: absolute;
     top: 0;
     left: 100%;
-    width: 200px; 
+    width: 200px;
     transition: display 0.3s ease;
 
 }
+
 .nav-item:hover .submenu2 {
     display: block;
 }
+
 .submenu2 li {
     list-style: none;
 }
+
 .submenu2 li a {
     display: block;
     padding: 5px 0;
@@ -626,7 +658,8 @@ body {
     border-collapse: collapse;
 }
 
-.table th, .table td {
+.table th,
+.table td {
     padding: .75rem;
     vertical-align: top;
     border-top: 1px solid #dee2e6;
@@ -637,7 +670,7 @@ body {
     border-bottom: 2px solid #dee2e6;
 }
 
-.table tbody + tbody {
+.table tbody+tbody {
     border-top: 2px solid #dee2e6;
 }
 
@@ -645,11 +678,13 @@ body {
     border: 1px solid #dee2e6;
 }
 
-.table-bordered th, .table-bordered td {
+.table-bordered th,
+.table-bordered td {
     border: 1px solid #dee2e6;
 }
 
-.table-bordered thead th, .table-bordered thead td {
+.table-bordered thead th,
+.table-bordered thead td {
     border-bottom-width: 2px;
 }
 
@@ -663,9 +698,11 @@ body {
     0% {
         box-shadow: 0 0 0 rgba(0, 0, 0, 0.3);
     }
+
     50% {
         box-shadow: 0 0 5px rgba(255, 0, 0, 0.7);
     }
+
     100% {
         box-shadow: 0 0 0 rgba(255, 4, 4, 0.3);
     }
@@ -682,9 +719,35 @@ body {
 
 /*--------noticias-------*/
 
+.main_contenedor_noticias {
+    display: flex;
+    flex-direction: row;
+}
 
-    .centradoNoti {
-        text-align: justify;
-        margin: 0 auto; /* Para centrar */
-        max-width: 1200px; /* Opcional: limita el ancho del contenedor */
+.main_noticias {
+    text-align: justify;
+    margin: 0 auto;
+    /* Para centrar */
+    max-width: 1200px;
+    /* Opcional: limita el ancho del contenedor */
+}
+
+
+.aside_noticias {
+    text-align: justify;
+    margin: 0 auto;
+}
+
+.aside_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+}
+
+@media screen and (max-width: 1200px) {
+    .main_contenedor_noticias {
+        flex-direction: column;
     }
+}
